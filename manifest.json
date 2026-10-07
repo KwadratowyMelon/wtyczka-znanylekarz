@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Sortowanie po cenie dla ZnanyLekarz",
+  "version": "1.0",
+  "description": "Nieoficjalny dodatek: sortowanie wyników wyszukiwania na znanylekarz.pl po cenie wizyty (rosnąco lub malejąco).",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.znanylekarz.pl/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
